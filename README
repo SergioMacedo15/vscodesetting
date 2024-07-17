@@ -12,7 +12,7 @@
   ],
   "extensions.ignoreRecommendations": true,
   "typescript.tsserver.log": "off",
-  "editor.stickyScroll.enabled": false,
+  // "editor.stickyScroll.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "files.associations": {
     ".env.*": "dotenv",
@@ -71,7 +71,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.semanticHighlighting.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
   "breadcrumbs.enabled": false,
   // "workbench.productIconTheme": "fluent-icons",
   "editor.tabSize": 2,
@@ -84,7 +84,8 @@
     ".vscode": true
     // "node_modules": true
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Theme",
+  // "workbench.iconTheme": "material-icon-theme",
   "update.mode": "default",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.defaultProfile.osx": "fish",
@@ -113,9 +114,21 @@
   },
   "explorer.fileNesting.enabled": true,
   "workbench.statusBar.visible": false,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": []
-  },
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Dracula Theme"
+  "workbench.preferredHighContrastColorTheme": "Dracula Theme",
+  "editor.tokenColorCustomizations": {
+    "[Dracula Theme]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "variable.other.constant"
+          ],
+          "settings": {
+            // "foreground": "#20e3b2",
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
 }
