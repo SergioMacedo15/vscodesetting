@@ -3,6 +3,7 @@
   "editor.fontSize": 12,
   "editor.lineHeight": 1.8,
   "editor.fontFamily": "Fira Code",
+  "editor.suggestSelection": "first",
   "javascript.suggest.autoImports": true,
   "editor.fontLigatures": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -25,9 +26,11 @@
   },
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
+  "workbench.preferredDarkColorTheme": "Min Dark",
   "cSpell.language": "en,pt",
   "typescript.updateImportsOnFileMove.enabled": "always",
   // "editor.suggestSelection": "first",
+  "window.autoDetectColorScheme": true,
   "explorer.confirmDelete": false,
   "terminal.integrated.showExitAlert": false,
   "[prisma]": {
@@ -76,8 +79,6 @@
   },
   "editor.semanticHighlighting.enabled": true,
   "breadcrumbs.enabled": false,
-  // "workbench.productIconTheme": "fluent-icons",
-  "editor.tabSize": 2,
   "files.exclude": {
     "**/CVS": true,
     "**/.DS_Store": true,
@@ -107,11 +108,11 @@
   "workbench.editor.empty.hint": "hidden",
   "editor.hideCursorInOverviewRuler": true,
   "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
-    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-, bun.lockb, nest, package-lock*",
+    "tailwind.config.": "tailwind.config, postcss.config*",
     ".env.local": ".env*",
     ".env": ".env*"
   },
@@ -132,10 +133,50 @@
           }
         }
       ]
+    },
+    "[Min Dark]": {
+      "textMateRules": [
+        // {
+        //   "scope": [
+        //     "variable.other.readwrite",
+        //   ],
+        //   "settings": {
+        //     "foreground": "#e4e4e4",
+        //     "fontStyle": "italic"
+        //   }
+        // }
+      ],
+      "comments": "#747474",
     }
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "KevinRose.vsc-python-indent",
+  // "editor.defaultFormatter": "KevinRose.vsc-python-indent",
   "editor.formatOnType": true,
+  "prettier.tabWidth": 4,
+  "prettier.bracketSpacing": false,
+  "prettier.printWidth": 180,
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.windows": {},
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": false,
+    "json": true,
+    "scminput": true // language used in the source control commit message box
+  }
 }
